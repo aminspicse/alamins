@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\HomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,9 +18,8 @@ Route::get('/admin', function () {
     return view('welcome');
 });
 
-Route::get('/', function () {
-    return view('visitor.home');
-});
+Route::get('/',[HomeController::class, 'index']);
+
 Route::get('/blog', [BlogController::class, 'index']);
 Route::get('/blog/{id}', [BlogController::class, 'details']);
 Route::get('/createpost', [BlogController::class, 'create']);

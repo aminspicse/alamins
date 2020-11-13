@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>MD. AL AMIN</title>
+  <title>{{ config('app.name') }}</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -36,7 +36,7 @@
   <!-- ======= Header/ Navbar ======= -->
   <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll" href="#page-top">MD. AL AMIN</a>
+      <a class="navbar-brand js-scroll" href="#page-top">{{ config('app.name') }}</a>
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span></span>
         <span></span>
@@ -77,7 +77,7 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="copyright-box">
-            <p class="copyright">&copy; Copyright <strong>MD. AL AMIN</strong>. All Rights Reserved</p>
+            <p class="copyright">&copy; Copyright <strong>{{config('app.name')}}</strong>. All Rights Reserved</p>
             <div class="credits">
               <!--
               All the links in the footer should remain intact.
@@ -85,7 +85,7 @@
               Licensing information: https://bootstrapmade.com/license/
               Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
             -->
-              <a>Designed by MD. AL AMIN</a>
+              <a>Designed by {{config('app.name')}}</a>
             </div>
           </div>
         </div>
